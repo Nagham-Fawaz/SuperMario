@@ -1,0 +1,240 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(255, 255, 160);
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgb(255, 255, 153);
+}
+header h1 {
+  background: linear-gradient(rgb(66, 66, 212), red, yellow);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 35px;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+header li {
+  margin-right: 15px;
+}
+.searchfor{
+    border: none;
+    padding: 10px;
+    width: 200px;
+    font-size: 16px;
+    background: rgb(255, 255, 153);
+    color: yellow;
+    border-radius: 20px;
+    height: 40px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+}
+.searchfor input{
+    width: 135px;
+    height: 25px;
+    border: none;
+    background: rgb(255, 255, 153);
+    color: rgb(156, 0, 0);
+}
+.searchfor button{
+    border: none;
+    background-color:rgb(255, 255, 153);
+    margin-left: 10px;
+}
+.searchfor button:hover{
+    color: red;
+}
+.box select {
+  background: transparent;
+  color: rgb(156, 0, 0);
+  padding: 10px;
+  width: 100px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+}
+header nav a {
+  text-decoration: none;
+  color: rgb(212, 10, 10);
+  font-weight: bold;
+  padding: 10px 10px;
+  border-color: rgb(212, 10, 10);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  margin-top: 15px;
+  font-size: 14px;
+}
+header nav a:hover {
+  opacity: 0.4;
+}
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  justify-content: right;
+  background-image: url("mariobg2.jpeg");
+  background-size: cover;
+  height: 500px;
+  text-align: right;
+  color: red;
+}
+.welcome h2 {
+  font-size: 36px;
+  margin-top: 60px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  color: red;
+}
+.typeWriter{
+  position: relative;
+}
+.typeWriter::after{
+    content:'!';
+    position: absolute;
+    right: -3%;
+    width: 56%;
+    color: red;
+    animation: typing 4s steps(20) infinite, line 1s infinite;
+    background-color: rgb(90, 208, 238);
+}
+@keyframes typing {
+    to
+    {
+        width: 0%;
+    }
+}
+@keyframes line {
+  50%
+  {
+     color: transparent;
+  }
+}
+
+.welcome button {
+  margin-left: 850px;
+  margin-right: 350px;
+  padding: 12px 20px;
+  background-color: red;
+  color: beige;
+  font-size: 22px;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.welcome button:hover, .welcome button:focus, .welcome button:active {
+    transform: scale(1.2);
+}
+.aboutUs {
+  text-align: center;
+  padding: 40px 20px;
+}
+.aboutUs h2 {
+  color: red;
+  font-size: 30px;
+}
+.aboutUs p {
+  margin-bottom: 30px;
+  line-height: 2.5;
+  font-size: 20px;
+  color: black;
+}
+.aboutUs a:hover {
+  color: red;
+}
+.characters {
+  text-align: center;
+  padding: 30px 20px;
+}
+.characters h2 {
+  color: red;
+  margin-bottom: 30px;
+}
+.images {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+}
+
+.images img {
+  width: 100%;
+  height: 300px;
+}
+
+.images img:hover, .images img:focus, .images img:active {
+  opacity: 0.6;
+  transform: scale(1.1);
+}
+.games {
+  text-align: center;
+  padding: 50px 20px;
+}
+.games h2 {
+  color: red;
+  margin: 50px 20px;
+}
+
+.container ul {
+  list-style: none;
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+.container ul li {
+  width: 25%;
+  height: 200px;
+}
+.container img {
+  width: 300px;
+  height: 150px;
+  margin: 15px 10px;
+}
+.title {
+  font-weight: 900;
+}
+.container ul li:hover {
+  opacity: 0.6;
+}
+.community h2 {
+  color: rgb(92, 199, 248);
+}
+table td {
+  padding: 0px 190px 20px 0px;
+}
+td a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+td a:hover {
+  color: rgb(92, 199, 248);
+}
+footer {
+  padding: 20px 20px;
+  background-color: rgb(92, 199, 248);
+}
+footer ul {
+  list-style: none;
+  display: flex;
+}
+footer li {
+  margin-left: 20px;
+  margin-right: 10px;
+}
+footer img {
+  height: 25px;
+  width: 25px;
+}
+footer li b {
+  margin-left: 200px;
+  color: brown;
+}
